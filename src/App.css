@@ -1,0 +1,45 @@
+
+
+
+ .card1{
+  
+  display: flex;
+  padding-top: 150px;
+  justify-content: center;
+ width: 100%;
+  background-color: #D1FFF3;
+}
+
+.card2 {
+  
+display: flex;
+padding-top: 150px;
+justify-content: center;
+width: 100%;
+margin-bottom: 100px;
+background-color: #2F58CD;
+} 
+
+.btn {
+  
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+}
+.refetch{
+  background-color:red; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+
+}
+
