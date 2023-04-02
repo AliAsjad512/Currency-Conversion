@@ -15,8 +15,8 @@ function Card1() {
   return (
 <div className="card1 max-w-lg rounded overflow-hidden shadow-lg">
   
-  <div class="px-3 py-4 ">
-    <div class="font-bold text-xl mb-2">Current Conversion Rate</div>
+  <div className="px-3 py-4 ">
+    <div className="font-bold text-xl mb-2">Current Conversion Rate</div>
     {rates && (
           <div>
             <p>{`1 BTC = ${rates.USD.rate}  `}

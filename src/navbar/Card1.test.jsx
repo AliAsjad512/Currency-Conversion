@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, waitFor } from '@testing-library/react';
 import Card1 from './Card1';
 
@@ -12,6 +11,3 @@ test('renders conversion rates correctly', async () => {
     expect(getByText(/1 BTC = £(.*) GBP/i)).toBeInTheDocument();
   });
 });
-
-
-
