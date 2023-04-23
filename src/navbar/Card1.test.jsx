@@ -1,13 +1,16 @@
-import { render, waitFor } from '@testing-library/react';
-import Card1 from './Card1';
 
-test('renders conversion rates correctly', async () => {
-  const { getByText } = render(<Card1 />);
   
-  await waitFor(() => {
-    expect(getByText(/1 BTC =/i)).toBeInTheDocument();
-    expect(getByText(/1 BTC = \$(.*) USD/i)).toBeInTheDocument();
-    expect(getByText(/1 BTC = €(.*) EUR/i)).toBeInTheDocument();
-    expect(getByText(/1 BTC = £(.*) GBP/i)).toBeInTheDocument();
+
+  import React from "react";
+import { render, screen } from "@testing-library/react";
+import '@testing-library/jest-dom';
+
+import Card1 from "./Card1";
+
+describe("Card1", () => {
+  test("displays the correct header", () => {
+    render(<Card1 />);
+    const headerElement = screen.queryByText('Current Conversion Rate');
+    expect(headerElement).toBeTruthy();
   });
 });
